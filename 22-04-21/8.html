@@ -13,11 +13,12 @@
     <form action="backend.php">
 
         <div>
-            Name: <input type="text" name="my_name">
+            <label for="name"> Name: </label>
+            <input type="text" name="my_name" id="name">
         </div>
         <br>
-        <div>
-            Role: <input type="text" name="myRole">
+        <div> <label for="role">Role:</label>
+            <input type="text" name="myRole" id="role">
         </div>
         <br>
         <div>
@@ -36,12 +37,20 @@
             Bonus: <input type="number" name="myBonus" id="">
         </div>
         <br>
-        <div>
-            Are you eligible: <input type="checkbox" name="myCheckbox" checked>
+        <div> <label for="eligibility"> Are you eligible:</label>
+            <input type="checkbox" name="myCheckbox" checked id="eligibility">
         </div>
         <br>
         <div>
             Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+        </div>
+        <br>
+        <div>
+            <label for="car">Car:</label>
+            <select name="myCar" id="car">
+                <option value="indica">Indica</option>
+                <option value="swift" selected>Swift</option>
+            </select>
         </div>
         <br>
         <div>
