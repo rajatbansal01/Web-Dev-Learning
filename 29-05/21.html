@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <style>
         *{
+            box-sizing: border-box;
+        }
+        *{
 
             font-family: 'Ubuntu', sans-serif;
 
@@ -15,7 +18,8 @@
         .container{
             width: 900px;
             border: 4px solid rgb(219, 197, 197);
-            margin: auto;
+            background-color: rgb(229, 236, 236);
+            margin: 33px auto;
         }
         .item{
             border: 2px solid rgb(76, 153, 216);
@@ -28,12 +32,19 @@
             width: 48%;
         }
         #computer{
-            float: left;
+            float: right;
             width: 48%;
         }
         #stationay{
-            float: left;
-            width: 48%;
+            /* float: left;
+            width: 48%; */
+            clear: both;
+            clear: left;
+            width: 100%;
+
+        }
+        p,h1 {
+            text-align: justify;
         }
 
     </style>
@@ -50,7 +61,7 @@
         </div>
         <div id="stationary", class="item"> 
             <h3>Stationary</h3>
-            <p id="stationarypara" , class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos accusamus expedita vel voluptatem blanditiis deserunt aut odio molestias quaerat. Optio magni consectetur quidem amet, sint obcaecati veniam soluta. Eius!</p>
+            <p id="stationarypara" , class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos accusamus expedita vel voluptatem blanditiis deserunt aut odio molestias quaerat. Optio magni consectetur quidem amet, sint obcaecati veniam soluta. Eius! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente dignissimos ex consectetur veritatis, id aperiam nobis ipsa nemo molestiae corrupti dolorum natus possimus neque adipisci placeat aliquam a ea eos consequuntur quaerat voluptas exercitationem facilis eligendi. Amet ex ratione hic perspiciatis fuga dolore nisi maiores debitis quasi, nesciunt libero assumenda consequuntur eos? Esse quas ea numquam quam blanditiis? Fugit, eaque!</p>
         </div>
     </div>
     
