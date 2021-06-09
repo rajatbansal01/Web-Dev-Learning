@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Size Units</title>
+    <style>
+        html{
+            /* font-size: 20px; */
+        }
+        .container{
+            font-size: 10px;
+            border: 2px solid red;
+            /* height: 300px; */
+            height: 100vh;
+            /* height according to page view  0vh me half*/
+            /* width: 300px; */
+            width: 100vw;
+            /* width according to page view (view port width) 0vw me half of view*/
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /* font-size: 10em;
+            padding: 3em; */
+
+        }
+        #second{
+            /* font-size: 3rem; */
+            /* padding: 3rem; */
+
+        }
+
+    </style>
+</head>
+<body><div class="container">
+    <h1 id="first">This is first heading</h1>
+    <h1 id="second">This is second heading</h1>
+    <h1 id="third">This is third heading</h1>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            height: 344px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initialize the container as a flex box. */
+            display: flex;
+
+            /* Flex Properties for flex Container */
+            flex-direction: row;  /* default value is row */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse;   reverse in row */
+            /* flex-wrap: wrap; */
+            /* flex-flow: row-reverse wrap; */
+            /* justify content for vertical direction: ; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-items: center;  vertically centre */
+            /* align-items: flex-end;  vertically centre */
+            /* align-items: flex-start;  vertically centre */
+            /* align-items: stretch;  vertically centre */
+
+
+        }
+        .item{
+            /* flex properties for flex items */
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+            width: 200px;
+            height: 200px;
+        }
+        #item1{
+            /* order: 2; */
+            /* flex-grow: 2; */
+
+        }
+        #item2{
+            /* higher the order later it shows */
+            /* order: 40; */
+            /* flex-grow: 3; */
+            flex-basis: 120px;
+            /* when flex direction is set to row flex basis will control width */
+            /* when flex direction is set to column flex basis will control height */
+
+        }
+        #item3{
+            flex: 2 2 344px;
+            align-self: flex-start;
+            align-self: flex-end;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h3>This is Flexbox</h3>
+    <div class="container">
+        <div class="item" id="item1">First Box</div>
+        <div class="item" id="item2">Second Box</div>
+        <div class="item" id="item3">Third Box</div>
+        <!-- <div class="item" id="item4">Fourth Box</div>
+        <div class="item" id="item5">Fifth Box</div>
+        <div class="item" id="item6">Sixth Box</div> -->
+    </div>
+
+
+    
+</body>
+</html>
