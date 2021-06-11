@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before amd After Pseudo Selectors</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        color: white;
+    }
+    .navigation{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        padding: 23px 34px;
+    }
+    section{
+        margin: 3px 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    section::before{
+        content: "This is a Content";
+    }
+    section::after{
+        content: "This is after content";
+    }
+    p{
+        text-align: center;
+    }
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home </li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Rajat Bansal Welcomes You</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum beatae saepe quia vitae quidem hic et, est ea quibusdam facere id? Aliquid dicta necessitatibus laudantium explicabo nihil tempore voluptatum, quas soluta quibusdam nesciunt.</p>
+        </section>
+    </header>
+</body>
+</html>
