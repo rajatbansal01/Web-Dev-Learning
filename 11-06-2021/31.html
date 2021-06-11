@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+<style>
+    h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+    /* any p contained by li contained by div */
+    div li p{
+        color: blue;
+        font-weight: bold;
+        background-color: wheat;
+    }
+    /* any p just after div */
+    div > p{
+        color: blue;
+        font-weight: bold;
+        background-color: wheat;
+    }
+    /* any p in level of div */
+    div + p{
+        color: white;
+        background-color: turquoise;
+    }
+    
+</style>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+                <li>This will not get affected </li>
+                <p>This is paragraph inside li</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+    
+</body>
+</html>
+
+<!-- by Rajat Bansal -->
