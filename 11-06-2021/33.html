@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Before amd After Pseudo Selectors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap" rel="stylesheet">
 </head>
 <style>
     body{
@@ -13,12 +15,27 @@
         background-color: black;
         color: white;
     }
+    header::before{
+        /* background: url("https://source.unsplash.com/collection/190727/1600x900")
+        no-repeat center center/cover; */
+        background: url("pg.jpg")
+        no-repeat center center/cover;
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.4;
+    }
     .navigation{
         display: flex;
+        font-family: 'Big Shoulders Stencil Display', cursive;
     }
     li{
         list-style: none;
-        padding: 23px 34px;
+        padding: 15px 30px;
     }
     section{
         margin: 3px 23px;
@@ -26,15 +43,20 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        font-family: cursive;
+        /* border: 2px solid red; */
     }
-    section::before{
+    /* section::before{
         content: "This is a Content";
     }
     section::after{
         content: "This is after content";
-    }
+    } */
     p{
         text-align: center;
+    }
+    h1{
+        font-size: 4rem;
     }
 </style>
 <body>
@@ -47,10 +69,11 @@
                 <li class="item">Contact Us</li>
             </ul>
         </nav>
-        <section>
-            <h3>Rajat Bansal Welcomes You</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum beatae saepe quia vitae quidem hic et, est ea quibusdam facere id? Aliquid dicta necessitatibus laudantium explicabo nihil tempore voluptatum, quas soluta quibusdam nesciunt.</p>
-        </section>
     </header>
+    <section>
+        <h1>Welcome to AskmePG.com</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsum beatae saepe quia vitae quidem hic et, est ea quibusdam facere id? Aliquid dicta necessitatibus laudantium explicabo nihil tempore voluptatum, quas soluta quibusdam nesciunt.</p>
+    </section>
+    <hr>
 </body>
 </html>
