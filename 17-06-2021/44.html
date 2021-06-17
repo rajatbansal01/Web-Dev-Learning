@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+        'navbar navbar navbar navbar'
+        'section section section aside' 
+        'footer footer footer footer';
+
+    }
+    .box{
+        background-color: yellow;
+        border: 3px solid black;
+    }
+    #navbar{
+        grid-area: navbar;
+
+    }
+    #section{
+        grid-area: section;
+
+    }
+    #aside{
+        grid-area: aside;
+
+    }
+    footer{
+        grid-area: footer;
+    }
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            Home about Contact US  
+        </div>
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit esse eum fugiat provident hic nostrum animi reprehenderit dicta veniam ad.
+        </div>
+        <div id="aside" class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit saepe laborum harum veritatis enim obcaecati, eveniet reprehenderit at ab repudiandae.
+        </div>
+        <!-- <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+        <div class="box">item-9</div>
+        <div class="box">item-10</div>
+        <div class="box">item-11</div>
+        <div class="box">item-12</div>
+        <div class="box">item-13</div>
+        <div class="box">item-14</div> -->
+    </div>
+    <footer class="
+    box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quos perferendis consectetur.
+    </footer>
+    
+</body>
+</html>
