@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, confirm and prompt</title>
+</head>
+<body>
+    <div class="containe">
+        This is a Page
+    </div>
+    <script>
+        // to pop up a message on main tab but alert doesnot return any thing
+        // let a = alert("This is is message");
+        // console.log(a);
+
+        // let name1 = prompt("What is your Name", "Guest");
+        // console.log(name1);
+
+        let deletepost = confirm("Do You Really Want to Delete this Post");
+        console.log(deletepost);
+
+        if (deletepost){
+            console.log("Deleted");
+        }
+        else{
+
+            console.log("Not Deleted");
+        }
+    </script>
+    
+</body>
+</html>
