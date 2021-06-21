@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Settimeout and ClaerTimeOut</title>
+</head>
+<body>
+    <div class="container">
+        Time is <span id="time"></span>
+    </div>
+
+    <script>
+        // console.log("58");
+        // setTimeout -- Allows us to run after a time once only 
+        // clearTimeout -- cancel settimeout
+
+        // function greet(name, byText){
+        //     console.log("Hello Good Morning " + name + byText);
+        // }
+        // timeout = setTimeout(greet, 5000 , "Rajat", "Take Care");
+        // console.log(timeout);
+
+        // clearTimeout(timeout);
+
+        // setTimeout(greet(), timeout); --wrong way as it is calling function 
+
+        // intervalId = setInterval(greet,1000,"Rajat", " Take Care");
+        // clearInterval(intervalId);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displayTime,1000);
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
