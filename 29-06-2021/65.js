@@ -2,7 +2,7 @@
 // Asynchronous or non-blocking 
 
 const fs = require("fs");
-fs.readFile("sample.txt", "utf-8", (err, data)=>
+fs.readFile("29-06-2021\\sample.txt", "utf-8", (err, data)=>
 {
     console.log(err,data);
 });
