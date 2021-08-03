@@ -1,0 +1,14 @@
+{
+  "name": "rajatbansal1",
+  "version": "1.0.0",
+  "description": "studying node and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rajatbansal01",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
